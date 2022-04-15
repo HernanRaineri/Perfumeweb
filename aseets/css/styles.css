@@ -37,6 +37,39 @@ header {
     height: calc(100vh - 4.37em);
 }
 
+/* transition  */
+
+.gallery__picture {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery__picture::before  {
+    content: " By Victor Anastasi";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    transition: transform .6s;
+    color: fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.gallery__picture:hover::before {
+    transform: scale(1) rotate(360deg);
+}
+
+/* end transition */
+
+
+
 a {
     text-decoration: none;
 }
