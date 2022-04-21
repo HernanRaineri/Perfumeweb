@@ -199,8 +199,10 @@ main {
     }
 }
 
+/* boostrap */
 
-
-
-
+.small {
+    text-align: center;
+    margin-top: 400px;
+}
 
