@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import 'variables';
+@import "./botones";
+@import "./mixins";
+@import "./maps";
+
 
 
 * {
@@ -225,6 +229,12 @@ main {
     bottom: -10px;
     text-align: center;
     width: 100%;
+}
+
+.footerLinks {
+    font-size: 60px;
+    text-align: center;
+    cursor: pointer;
 }
 
 /* Modificando el About */

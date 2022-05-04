@@ -1,4 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+.boton, .botonRojo, .botonVerde {
+  background-color: blueviolet;
+  text-align: center;
+  color: pink;
+  border-radius: 20px;
+  border: 1px solid black; }
+  .boton:hover, .botonRojo:hover, .botonVerde:hover {
+    filter: opacity(85%); }
+
+.botonRojo {
+  background-color: red;
+  color: yellow; }
+
+.botonVerde {
+  background-color: green;
+  color: yellow; }
+
+.letraChica {
+  font-size: 1rem;
+  font-weight: 100; }
+
+.letraMediana {
+  font-size: 2rem;
+  font-weight: 500; }
+
+.letraGrande {
+  font-size: 3rem;
+  font-weight: 700; }
+
+/* configuracion de botones  */
+/* .botonLinkedin {
+    color: map-get($map: $redes, $key: Linkedin);
+}
+
+.botonFacebook {
+    color: map-get($map: $redes, $key: Facebook);
+}
+
+.botonInstagram {
+    color: map-get($map: $redes, $key: Instagram);
+} */
+/* finde configuracion de botones */
+/* creando un @for */
+.col-1 {
+  width: 10%; }
+
+.col-2 {
+  width: 20%; }
+
+.col-3 {
+  width: 30%; }
+
+.col-4 {
+  width: 40%; }
+
+.col-5 {
+  width: 50%; }
+
+/* fin de creacion de un for */
+/* creando un siclo para no repedir configuracion de botones  */
+.botonLinkedin {
+  color: #3e3ed8; }
+
+.botonFacebook {
+  color: #1b1b77; }
+
+.botonInstagram {
+  color: #be6161; }
+
+/* fin un siclo para no repedir configuracion de botones */
 * {
   margin: 0;
   padding: 0;
@@ -157,6 +227,11 @@ main {
   bottom: -10px;
   text-align: center;
   width: 100%; }
+
+.footerLinks {
+  font-size: 60px;
+  text-align: center;
+  cursor: pointer; }
 
 /* Modificando el About */
 /* main {

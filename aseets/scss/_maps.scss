@@ -1,0 +1,41 @@
+$redes: (
+    Linkedin: rgb(62, 62, 216),
+    Facebook: rgb(27, 27, 119),
+    Instagram: rgb(190, 97, 97),
+);
+
+/* configuracion de botones  */
+
+/* .botonLinkedin {
+    color: map-get($map: $redes, $key: Linkedin);
+}
+
+.botonFacebook {
+    color: map-get($map: $redes, $key: Facebook);
+}
+
+.botonInstagram {
+    color: map-get($map: $redes, $key: Instagram);
+} */
+
+/* finde configuracion de botones */
+
+/* creando un @for */
+
+@for $i from 1 to 6 {
+    .col-#{$i} {
+        width: 10% * $i;
+    }   
+}
+
+/* fin de creacion de un for */
+
+/* creando un siclo para no repedir configuracion de botones  */
+
+@each $red, $color in $redes {
+    .boton#{$red} {
+        color: $color;
+     }
+}
+
+/* fin un siclo para no repedir configuracion de botones */
