@@ -232,15 +232,86 @@ main {
 }
 
 .footerLinks {
-    font-size: 60px;
-    text-align: center;
+    font-size: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 300px;
     cursor: pointer;
+    
 }
 
 /* Modificando el About */
 
-/* main {
+.section {
+    width: 100%;
+    min-height: 100vh;
+}
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
 
-   display: flex;
-   justify-content: center;
-} */ 
+.container-section {
+    float: left;
+    width: 55%;
+}
+
+ .image-section {
+     float: right;
+     width: 40%;
+ }
+ 
+ .image-section img {
+     width: 100%;
+     height: auto;
+ }
+
+ .container-section .title {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+
+ .vic__video {
+   /*  position: relative; */
+    z-index: 10;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background: $color-background;
+    background-position: center;
+    background-size: contain;
+    height: 59vh;
+    padding: 60px;
+    margin-top: 60px;
+}
+
+/* modificacion  */
+.container {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.container-section {
+    float: left;
+    width: 100%;
+}
+
+.image-section {
+    float: right;
+    width: 100%;
+}
+
+}
+
+  
+ 
+
+ 
