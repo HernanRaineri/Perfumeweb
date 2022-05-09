@@ -223,8 +223,8 @@ main {
 
 /* footer */
 .foot {
-  position: absolute;
-  bottom: -10px;
+  position: fixed;
+  bottom: 0vh;
   text-align: center;
   width: 100%; }
 
@@ -233,7 +233,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 300px;
+  margin-top: 33vh;
   cursor: pointer; }
 
 /* Modificando el About */
